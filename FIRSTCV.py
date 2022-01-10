@@ -14,7 +14,7 @@ for x in range(0, 20000 -1, GRID_SIZE):
 for x in range(0, 20000 -1, GRID_SIZE):
      cv2.line(img, (0,x), (20000,x), ( 0, 0,255), 1, 1)
 #print(img.shape)
-"""
+
 import cv2
 import numpy as np
 import matplotlib
@@ -64,6 +64,6 @@ for i in contours:
             cv2.drawContours(roi,cntrRect,-1,(0,255,0),2)
             cv2.imshow('Roi Rect ONLY',roi)
             cntrRect.append(approx)
-"""
+
 cv2.imshow('image',img)
 key = cv2.waitKey(0)
